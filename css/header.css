@@ -1,0 +1,68 @@
+/* header */
+header {
+  background: #111;
+  width: 100%;
+  padding: 5px;
+}
+
+.container-menu {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 140px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: end;
+}
+
+.menu,
+a {
+  color: white;
+}
+
+.btn-menu {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  background-image: linear-gradient(45deg, #ff0000, #ff8800);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
+/* .sociais button {
+  width: 35px;
+  height: 35px;
+  background-image: linear-gradient(45deg, #ff2500, #ff7100);
+  border: none;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: end;
+} */

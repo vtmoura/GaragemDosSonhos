@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap");
+
+/* Header */
+@import url('./css/header.css');
+
+/* introdução */
+@import url('./css/introducao.css');
+
+/* footer */
+@import url('./css/footer.css');
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  background-image:
+    repeating-linear-gradient(45deg, #2a2a2a 0px, #2a2a2a 2px, #1a1a1a 2px, #1a1a1a 4px),
+    repeating-linear-gradient(-45deg, #2a2a2a 0px, #2a2a2a 2px, #1a1a1a 2px, #1a1a1a 4px);
+  background-size: 20px 20px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+}
