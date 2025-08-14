@@ -28,7 +28,7 @@ header {
   justify-content: end;
 }
 
-.menu,
+.menu
 a {
   color: white;
 }
@@ -66,3 +66,31 @@ a:hover::after {
   cursor: pointer;
   align-self: end;
 } */
+
+
+
+@media(max-width: 1000px){
+  .menu{
+    justify-content: start;
+  }
+  .logo{
+    justify-self: center;
+  }
+}
+
+@media(max-width: 800px){
+  .container-menu{
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .menu{
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .menu a{
+    background: #292828;
+    padding: 3px 6px;
+    border-radius: 4px;
+  }
+
+}
