@@ -102,3 +102,7 @@ button:hover {
 .contato {
   flex: 1;
 }
+
+@media(max-width: 800px){
+  
+}

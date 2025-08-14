@@ -3,7 +3,7 @@
   color: #d0ffd0;
 } */
 
-.container-introducao{
+.container-introducao {
   color: #fff;
   max-width: 1080px;
   margin: 0 auto;
@@ -26,10 +26,7 @@
   white-space: nowrap;
   pointer-events: none;
   user-select: none;
-
 }
-
-
 
 .font-titulo {
   font-family: "Bebas Neue", sans-serif;
@@ -38,32 +35,28 @@
   /* font-size: 120px; */
 }
 
-.font-texto{
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 10px;
+.font-texto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 10px;
 }
 
-
-.descricao{
-  text-align: start;  
+.descricao {
+  text-align: start;
   align-self: center;
 }
 
-
-
-.moto{
+.moto {
   width: 600px;
-  object-fit:contain;
+  object-fit: contain;
 }
 
-.twister{
+.twister {
   margin: -120px 0;
-
 }
 
-.especificacoes{
+.especificacoes {
   align-self: center;
   margin-bottom: 30px;
 }
@@ -79,6 +72,15 @@
   display: flex;
   flex-direction: column;
   align-items: inherit;
+}
+
+.card {
+  min-width: 250px;
+  flex-shrink: 0;
+  background: #1a1a1a;
+  border-radius: 8px;
+  color: white;
+  scroll-snap-align: start;
 }
 
 .card:hover {
@@ -131,28 +133,61 @@
   color: #000;
 }
 
-
-.motos-container{
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 30px;
+.container-moto {
+  justify-self: center;
 }
 
-.motos-container img{
+.motos-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.motos-container img {
   object-fit: cover;
   width: 220px;
   height: 145px;
 }
 
-.container-card{
+.container-card {
   padding: 2px 16;
   background: #fff;
 }
 
+@media (max-width: 1200px) {
+  .container-introducao {
+    grid-template-columns: 1fr;
+  }
+  .especificacoes {
+    text-align: center;
+  }
+  .frase {
+    text-align: center;
+    margin-top: 20px;
+    }
 
+    .texto {
+      display: none;
+    }
+
+  @media (max-width: 800px) {
+
+    .background-title {
+      font-size: 70px;
+      top: 25%;
+    }
+    .font-texto{
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .moto {
+      width: 100%;
+    }
+  }
+}
